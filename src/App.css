@@ -1,0 +1,298 @@
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/*--------------------*/
+
+.app {
+  display: grid;
+  grid-template-columns: 26rem 1fr;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+}
+
+.home-page_content {
+  text-align: center;
+  margin-top: 30px;
+  font-size: xx-large;
+}
+.laoding-container {
+  display: flex;
+  justify-content: center;
+}
+
+.loading-label {
+  font-size: 50px;
+  margin-top: 50px;
+}
+
+.button {
+  background-color: bisque;
+  border-radius: 20px;
+  height: 30px;
+  min-width: 120px;
+  
+}
+
+.button:hover{
+background-color: burlywood}
+
+.header {
+  background-color: burlywood;
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.header img {
+  height: 70px;
+}
+
+.header h1 {
+  font-size: xx-large;
+  padding-right: 50px;
+}
+
+.search {
+  padding-left: 600px;
+  /* margin: 0 auto; */
+}
+
+.searchInput {
+  border-radius: 20px;
+  height: 30px;
+  background-color: aliceblue;
+  font-style: oblique;
+  font-size: 20px;
+  padding-left: 30px;
+}
+
+.logoLink {
+  font-size: xx-large;
+  text-decoration: none;
+  color: slategray;
+}
+
+.main {
+  padding: 10px 10px 10px;
+  height: 100%;
+  margin: 0;
+}
+
+.main-container {
+  margin: 0 auto;
+  min-height: 100vh;
+  margin-left: 20px;
+  margin-right: 20px;
+  flex: 1;
+}
+
+.recipes-buttons_container {
+  display: flex;
+  align-items: center;
+}
+
+.recipes-buttons_container h1 {
+  font-size: x-large;
+  padding-left: 30px;
+}
+
+.recipes-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.recipe-card_prepTimeMinutes {
+  font-size: x-large;
+  margin-top: 10px;
+}
+.recipe-item_container {
+  margin-top: 5px;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  background-color: aliceblue;
+}
+
+.recipe-item_image {
+  height: 100px;
+}
+
+.recipe-item-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.recipe-item-description_container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.recipe-item_title {
+  font-size: x-large;
+  margin: 2px 0px;
+}
+
+.recipe-item_author {
+  font-size: large;
+  margin-bottom: 3px;
+}
+
+.recipe-item_language {
+  font-size: large;
+}
+.recipe-item_buttons {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.recipe-item_button button {
+  text-align: center;
+}
+
+.my-recipes h1 {
+  font-size: x-large;
+  padding-left: 30px;
+}
+
+.my-recipes_buttons_container {
+  display: flex;
+  align-items: center;
+}
+.my-recipes_buttons {
+  display: flex;
+  gap: 10px;
+}
+.recipe-card_container {
+  display: flex;
+  gap: 20px;
+}
+.recipe-card_buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.recipe-card_img {
+  max-width: 600px;
+  border: 6px solid antiquewhite;
+}
+
+.recipe-card_name {
+  font-size: 80px;
+}
+
+.recipe-card_cuisine {
+  font-size: 50px;
+}
+
+.recipe-card_caloriesPerServing {
+  margin-top: 30px;
+  font-size: x-large;
+}
+
+.recipe-card_preparation {
+  margin-left: 200px;
+}
+
+.recipe-card_preparation h2 {
+  font-size: xxx-large;
+  margin-bottom: 5px;
+}
+.recipe-card_ingrediens {
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.recipe-card_ingrediens p {
+  font-size: x-large;
+  color: darkolivegreen;
+}
+
+.recipe-card_instructions {
+  max-width: 500px;
+}
+
+.recipe-card_instructions p {
+  font-size: x-large;
+  color: darkolivegreen;
+}
