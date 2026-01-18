@@ -30,6 +30,7 @@ export default function BookItem({
       return alert("Recipe already added");
 
     addMyRecipe(newRecipe);
+    alert("Recipe added.");
   }
 
   return (
@@ -62,7 +63,6 @@ export default function BookItem({
               isDisabled={isLoading}
               handler={() => {
                 handleAddMyRecipe();
-                alert("Recipe added.");
               }}
             >
               Add to my cart
