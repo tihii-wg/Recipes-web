@@ -30,7 +30,7 @@ export default function BookItem({
       return alert("Recipe already added");
 
     addMyRecipe(newRecipe);
-    alert("Recipe added.");
+    alert("Recipe was added.");
   }
 
   return (

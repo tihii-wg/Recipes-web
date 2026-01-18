@@ -30,16 +30,17 @@ export default function RecipeCard() {
     prepTimeMinutes,
   }: Recipe = recipe;
 
+  let newRecipe = structuredClone(recipe);
+  newRecipe.id = id.toString();
+  const isAdded = myRecipes?.some((recipe) => recipe.id === newRecipe.id);
+
   function handleAddMyRecipe() {
     if (!recipe) return;
 
-    let newRecipe = structuredClone(recipe);
-    newRecipe.id = id.toString();
-
-    if (myRecipes?.some((recipe) => recipe.id === newRecipe.id))
-      return alert("Recipe already added");
+    if (isAdded) return alert("Recipe already added");
 
     addRecipe(newRecipe);
+    alert("Recioe was added.");
   }
 
   return (
@@ -52,14 +53,16 @@ export default function RecipeCard() {
         >
           Back
         </Button>
-        <Button
-          isDisabled={isLoading}
-          handler={() => {
-            handleAddMyRecipe();
-          }}
-        >
-          Add to my recipes
-        </Button>
+        {!isAdded && (
+          <Button
+            isDisabled={isLoading}
+            handler={() => {
+              handleAddMyRecipe();
+            }}
+          >
+            Add to my recipes
+          </Button>
+        )}
         <Button
           handler={() => {
             navigate("/myrecipes");

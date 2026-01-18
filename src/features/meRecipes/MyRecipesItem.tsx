@@ -43,7 +43,7 @@ export default function RecipeItem({
             <Button
               handler={() => {
                 deleteBook(id.toString());
-                alert("Recipe deleted.");
+                alert("Recipe was deleted.");
               }}
             >
               Delete recipe
