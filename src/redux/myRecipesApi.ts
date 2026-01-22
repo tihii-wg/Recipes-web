@@ -3,28 +3,28 @@ import type { Recipe } from "../Types/types";
 
 export const myRecipesApi = createApi({
   reducerPath: "myBooksApi",
-  tagTypes: ["mybooks"],
+  tagTypes: ["myrecipes"],
   baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:3001/" }),
   endpoints: (build) => ({
     getMyRecipes: build.query<Recipe[], void>({
-      query: () => "mybooks",
-      providesTags: ["mybooks"],
+      query: () => "myrecipes",
+      providesTags: ["myrecipes"],
       keepUnusedDataFor: 600,
     }),
     addMyRecipe: build.mutation<Recipe, Recipe>({
-      query: (newBook) => ({
-        url: "mybooks",
+      query: (newRecipe) => ({
+        url: "myrecipes",
         method: "POST",
-        body: newBook,
+        body: newRecipe,
       }),
-      invalidatesTags: ["mybooks"],
+      invalidatesTags: ["myrecipes"],
     }),
     deleteRecipe: build.mutation<void, string>({
       query: (id) => ({
-        url: `mybooks/${id}`,
+        url: `myrecipes/${id}`,
         method: "DELETE",
       }),
-      invalidatesTags: ["mybooks"],
+      invalidatesTags: ["myrecipes"],
     }),
   }),
 });
