@@ -1,12 +1,13 @@
 import { useNavigate, useParams } from "react-router-dom";
 import { useGetRecipeByIdQuery } from "../redux/recipesApi";
 import Button from "./Button";
-import type { Recipe } from "../Types/types";
+import type { Recipe } from "../types/types";
 import Loading from "./Loading";
 import {
   useAddMyRecipeMutation,
   useGetMyRecipesQuery,
 } from "../redux/myRecipesApi";
+import toast from "react-hot-toast";
 
 export default function RecipeCard() {
   const navigate = useNavigate();
@@ -37,10 +38,9 @@ export default function RecipeCard() {
   function handleAddMyRecipe() {
     if (!recipe) return;
 
-    if (isAdded) return alert("Recipe already added");
 
     addRecipe(newRecipe);
-    alert("Recipe was added.");
+    toast.success("Recipe was added.");
   }
 
   return (

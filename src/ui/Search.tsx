@@ -1,4 +1,4 @@
-import type { SearcProps } from "../Types/types";
+import type { SearcProps } from "../types/types";
 
 export default function Search({ inputSearch, setInputSearch }: SearcProps) {
   return (

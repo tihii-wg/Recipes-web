@@ -1,4 +1,4 @@
-import type { Recipe, RecipeListProps } from "../../Types/types";
+import type { Recipe, RecipeListProps } from "../../types/types";
 import MyRecipeItem from "./MyRecipesItem";
 
 export default function BookList({ recipes }: RecipeListProps) {

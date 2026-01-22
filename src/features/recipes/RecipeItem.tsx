@@ -3,9 +3,10 @@ import {
   useAddMyRecipeMutation,
   useGetMyRecipesQuery,
 } from "../../redux/myRecipesApi";
-import type { RecipeItemProps } from "../../Types/types";
+import type { RecipeItemProps } from "../../types/types";
 import Button from "../../ui/Button";
 import { useNavigate } from "react-router";
+import toast from "react-hot-toast";
 
 export default function BookItem({
   id,
@@ -27,10 +28,10 @@ export default function BookItem({
     newRecipe.id = id.toString();
 
     if (myRecipes.some((recipe) => recipe.id === newRecipe.id))
-      return alert("Recipe already added");
+      return toast("Recipe already added");
 
     addMyRecipe(newRecipe);
-    alert("Recipe was added.");
+    toast.success("Recipe was added.");
   }
 
   return (

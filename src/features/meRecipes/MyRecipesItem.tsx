@@ -1,7 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import { useDeleteRecipeMutation } from "../../redux/myRecipesApi";
-import type { RecipeItemProps } from "../../Types/types";
+import type { RecipeItemProps } from "../../types/types";
 import Button from "../../ui/Button";
+import toast from "react-hot-toast";
 
 export default function RecipeItem({
   id,
@@ -43,7 +44,7 @@ export default function RecipeItem({
             <Button
               handler={() => {
                 deleteBook(id.toString());
-                alert("Recipe was deleted.");
+                toast.success("Recipe was deleted.");
               }}
             >
               Delete recipe

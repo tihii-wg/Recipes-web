@@ -1103,44 +1103,160 @@
   ],
   "myrecipes": [
     {
-      "id": "2",
-      "name": "Vegetarian Stir-Fry",
+      "id": "4",
+      "name": "Chicken Alfredo Pasta",
       "ingredients": [
-        "Tofu, cubed",
-        "Broccoli florets",
-        "Carrots, sliced",
-        "Bell peppers, sliced",
-        "Soy sauce",
-        "Ginger, minced",
+        "Fettuccine pasta",
+        "Chicken breast, sliced",
+        "Heavy cream",
+        "Parmesan cheese, grated",
         "Garlic, minced",
-        "Sesame oil",
-        "Cooked rice for serving"
+        "Butter",
+        "Salt and pepper to taste",
+        "Fresh parsley for garnish"
       ],
       "instructions": [
-        "In a wok, heat sesame oil over medium-high heat.",
-        "Add minced ginger and garlic, sauté until fragrant.",
-        "Add cubed tofu and stir-fry until golden brown.",
-        "Add broccoli, carrots, and bell peppers. Cook until vegetables are tender-crisp.",
-        "Pour soy sauce over the stir-fry and toss to combine.",
-        "Serve over cooked rice."
+        "Cook fettuccine pasta according to package instructions.",
+        "In a pan, sauté sliced chicken in butter until fully cooked.",
+        "Add minced garlic and cook until fragrant.",
+        "Pour in heavy cream and grated Parmesan cheese. Stir until the cheese is melted.",
+        "Season with salt and pepper to taste.",
+        "Combine the Alfredo sauce with cooked pasta.",
+        "Garnish with fresh parsley before serving."
       ],
       "prepTimeMinutes": 15,
       "cookTimeMinutes": 20,
+      "servings": 4,
+      "difficulty": "Medium",
+      "cuisine": "Italian",
+      "caloriesPerServing": 500,
+      "tags": [
+        "Pasta",
+        "Chicken"
+      ],
+      "userId": 136,
+      "image": "https://cdn.dummyjson.com/recipe-images/4.webp",
+      "rating": 4.9,
+      "reviewCount": 82,
+      "mealType": [
+        "Lunch",
+        "Dinner"
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Mango Salsa Chicken",
+      "ingredients": [
+        "Chicken thighs",
+        "Mango, diced",
+        "Red onion, finely chopped",
+        "Cilantro, chopped",
+        "Lime juice",
+        "Jalapeño, minced",
+        "Salt and pepper to taste",
+        "Cooked rice for serving"
+      ],
+      "instructions": [
+        "Season chicken thighs with salt and pepper.",
+        "Grill or bake chicken until fully cooked.",
+        "In a bowl, combine diced mango, chopped red onion, cilantro, minced jalapeño, and lime juice.",
+        "Dice the cooked chicken and mix it with the mango salsa.",
+        "Serve over cooked rice."
+      ],
+      "prepTimeMinutes": 15,
+      "cookTimeMinutes": 25,
       "servings": 3,
+      "difficulty": "Easy",
+      "cuisine": "Mexican",
+      "caloriesPerServing": 380,
+      "tags": [
+        "Chicken",
+        "Salsa"
+      ],
+      "userId": 26,
+      "image": "https://cdn.dummyjson.com/recipe-images/5.webp",
+      "rating": 4.9,
+      "reviewCount": 63,
+      "mealType": [
+        "Dinner"
+      ]
+    },
+    {
+      "id": "1",
+      "name": "Classic Margherita Pizza",
+      "ingredients": [
+        "Pizza dough",
+        "Tomato sauce",
+        "Fresh mozzarella cheese",
+        "Fresh basil leaves",
+        "Olive oil",
+        "Salt and pepper to taste"
+      ],
+      "instructions": [
+        "Preheat the oven to 475°F (245°C).",
+        "Roll out the pizza dough and spread tomato sauce evenly.",
+        "Top with slices of fresh mozzarella and fresh basil leaves.",
+        "Drizzle with olive oil and season with salt and pepper.",
+        "Bake in the preheated oven for 12-15 minutes or until the crust is golden brown.",
+        "Slice and serve hot."
+      ],
+      "prepTimeMinutes": 20,
+      "cookTimeMinutes": 15,
+      "servings": 4,
+      "difficulty": "Easy",
+      "cuisine": "Italian",
+      "caloriesPerServing": 300,
+      "tags": [
+        "Pizza",
+        "Italian"
+      ],
+      "userId": 166,
+      "image": "https://cdn.dummyjson.com/recipe-images/1.webp",
+      "rating": 4.6,
+      "reviewCount": 98,
+      "mealType": [
+        "Dinner"
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Beef and Broccoli Stir-Fry",
+      "ingredients": [
+        "Beef sirloin, thinly sliced",
+        "Broccoli florets",
+        "Soy sauce",
+        "Oyster sauce",
+        "Sesame oil",
+        "Garlic, minced",
+        "Ginger, minced",
+        "Cornstarch",
+        "Cooked white rice for serving"
+      ],
+      "instructions": [
+        "In a bowl, mix soy sauce, oyster sauce, sesame oil, and cornstarch to create the sauce.",
+        "In a wok, stir-fry thinly sliced beef until browned. Remove from the wok.",
+        "Stir-fry broccoli florets, minced garlic, and minced ginger in the same wok.",
+        "Add the cooked beef back to the wok and pour the sauce over the mixture.",
+        "Stir until everything is coated and heated through.",
+        "Serve over cooked white rice."
+      ],
+      "prepTimeMinutes": 20,
+      "cookTimeMinutes": 15,
+      "servings": 4,
       "difficulty": "Medium",
       "cuisine": "Asian",
-      "caloriesPerServing": 250,
+      "caloriesPerServing": 380,
       "tags": [
-        "Vegetarian",
+        "Beef",
         "Stir-fry",
         "Asian"
       ],
-      "userId": 143,
-      "image": "https://cdn.dummyjson.com/recipe-images/2.webp",
+      "userId": 18,
+      "image": "https://cdn.dummyjson.com/recipe-images/8.webp",
       "rating": 4.7,
-      "reviewCount": 26,
+      "reviewCount": 58,
       "mealType": [
-        "Lunch"
+        "Dinner"
       ]
     }
   ]

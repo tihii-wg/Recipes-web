@@ -9,8 +9,7 @@ export const store = configureStore({
   },
 
   middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat(
-      recipesApi.middleware,
-      myRecipesApi.middleware
-    ),
+    getDefaultMiddleware()
+      .concat(recipesApi.middleware)
+      .concat(myRecipesApi.middleware),
 });
