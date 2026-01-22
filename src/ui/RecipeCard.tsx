@@ -40,7 +40,7 @@ export default function RecipeCard() {
     if (isAdded) return alert("Recipe already added");
 
     addRecipe(newRecipe);
-    alert("Recioe was added.");
+    alert("Recipe was added.");
   }
 
   return (
