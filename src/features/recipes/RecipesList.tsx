@@ -1,7 +1,10 @@
 import type { Recipe, RecipeListProps } from "../../types/types";
+import RecipeNotFound from "../../ui/RecipeNotFound";
 import RecipeItem from "./RecipeItem";
 
 export default function RecipeList({ recipes }: RecipeListProps) {
+  if (recipes?.length === 0) return <RecipeNotFound />;
+
   return (
     <ul>
       {recipes?.map((r: Recipe) => (

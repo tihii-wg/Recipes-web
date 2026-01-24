@@ -17,6 +17,8 @@ export default function Recipes() {
   const { data: recipes, isLoading } = useSearchRecipeQuery(inputSearch);
 
   if (isLoading) return <Loading />;
+
+
   return (
     <div className="recipes">
       <Outlet />
