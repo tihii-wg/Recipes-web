@@ -31,26 +31,19 @@ export type SearcProps = {
   inputSearch: string;
   setInputSearch: (value: string) => void;
 };
-// export type Recipe = {
-//   caloriesPerServing: number;
-//   cookTimeMinutes: number;
-//   cuisine: string;
-//   difficulty: string;
-//   id: string | string;
-//   image: string;
-//   ingredients: [];
-//   instructions: [];
-//   mealType: [];
-//   name: string;
-//   prepTimeMinutes: number;
-//   rating: number;
-//   reviewCount: number;
-//   servings: number;
-//   tags: [];
-//   userId: number;
+
+// export type SearchInputParams = {
+//   pageNumber?: number;
+//   pageSize?: number;
+//   search?: string;
+//   sortBy?: "addedAt" | "likesCount";
+//   sortDirection?: "asc" | "desc";
+//   tafsId?: string[];
+//   recipeid?: "string";
 // };
 
 export type RecipeItemProps = {
+  recipe: Recipe;
   id: number | string;
   image: string;
   prepTimeMinutes: number;

@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import type { Recipe, Recipes } from "../types/types";
 
 export const recipesApi = createApi({
-  reducerPath: "booksApi",
+  reducerPath: "recipesApi",
   tagTypes: ["recipes"],
   baseQuery: fetchBaseQuery({ baseUrl: "https://dummyjson.com/" }),
   endpoints: (build) => ({

@@ -7,8 +7,8 @@ export default function Search({ inputSearch, setInputSearch }: SearcProps) {
       onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
         setInputSearch(e.target.value)
       }
-      className="searchInput"
-      type="text"
+      className="search-input"
+      type="search"
       placeholder="Search book..."
     />
   );

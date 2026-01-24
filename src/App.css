@@ -135,14 +135,16 @@ background-color: burlywood}
   /* margin: 0 auto; */
 }
 
-.searchInput {
+.search-input {
   border-radius: 20px;
   height: 30px;
   background-color: aliceblue;
   font-style: oblique;
   font-size: 20px;
   padding-left: 30px;
+  padding-right: 10px;
 }
+
 
 .logoLink {
   font-size: xx-large;

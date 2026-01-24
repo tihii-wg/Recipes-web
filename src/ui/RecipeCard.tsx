@@ -18,6 +18,7 @@ export default function RecipeCard() {
   const { data: myRecipes } = useGetMyRecipesQuery();
   const { data: recipe, isLoading } = useGetRecipeByIdQuery(recipeId);
   const [addRecipe] = useAddMyRecipeMutation();
+
   if (isLoading || !recipe) return <Loading />;
 
   const {
@@ -32,12 +33,13 @@ export default function RecipeCard() {
   }: Recipe = recipe;
 
   let newRecipe = structuredClone(recipe);
+
   newRecipe.id = id.toString();
+
   const isAdded = myRecipes?.some((recipe) => recipe.id === newRecipe.id);
 
   function handleAddMyRecipe() {
     if (!recipe) return;
-
 
     addRecipe(newRecipe);
     toast.success("Recipe was added.");

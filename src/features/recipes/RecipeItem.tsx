@@ -1,4 +1,3 @@
-import { useGetRecipeByIdQuery } from "../../redux/recipesApi";
 import {
   useAddMyRecipeMutation,
   useGetMyRecipesQuery,
@@ -8,18 +7,18 @@ import Button from "../../ui/Button";
 import { useNavigate } from "react-router";
 import toast from "react-hot-toast";
 
-export default function BookItem({
+export default function RecipeItem({
   id,
   image,
   prepTimeMinutes,
   caloriesPerServing,
   cuisine,
   name,
+  recipe,
 }: RecipeItemProps) {
   const navigate = useNavigate();
   const [addMyRecipe, { isLoading }] = useAddMyRecipeMutation();
   const { data: myRecipes } = useGetMyRecipesQuery();
-  const { data: recipe } = useGetRecipeByIdQuery(id);
 
   function handleAddMyRecipe() {
     if (!recipe || !myRecipes) return;

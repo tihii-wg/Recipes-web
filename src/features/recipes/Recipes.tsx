@@ -11,10 +11,10 @@ import Loading from "../../ui/Loading";
 
 export default function Recipes() {
   const navigate = useNavigate();
+
   const [inputSearch, setInputSearch] = useState("");
-console.log(inputSearch)
+
   const { data: recipes, isLoading } = useSearchRecipeQuery(inputSearch);
-  // const { data: recipes2, isLoading: isLoading2 } = useGetRecipesQuery();
 
   if (isLoading) return <Loading />;
   return (
