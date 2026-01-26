@@ -25,6 +25,7 @@ export type Recipe = {
 
 export type RecipeListProps = {
   recipes: Recipe[];
+  isSearch: boolean;
 };
 
 export type SearcProps = {

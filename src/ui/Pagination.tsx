@@ -4,15 +4,17 @@ export default function Pagination() {
   return (
     <div className="pagination-container">
       <p>
-        Showinh <span>1</span>
-        to <span>10</span> of <span>50</span> results
+        Showing <span>1 </span>
+        to <span>10</span> recipes.
       </p>
-      <Button>
-        <span>Previos</span>
-      </Button>
-      <Button>
-        <span>Next</span>
-      </Button>
+      <div className="pagination-buttons">
+        <Button>
+          <span>Previos</span>
+        </Button>
+        <Button>
+          <span>Next</span>
+        </Button>
+      </div>
     </div>
   );
 }

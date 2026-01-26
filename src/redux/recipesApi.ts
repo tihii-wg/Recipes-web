@@ -6,19 +6,24 @@ export const recipesApi = createApi({
   tagTypes: ["recipes"],
   baseQuery: fetchBaseQuery({ baseUrl: "https://dummyjson.com/" }),
   endpoints: (build) => ({
-    // getBooks: build.query<books, void>({
-    //   query: () => "recipes",
-    //   // providesTags: ["books"],
-    // }),
+    getRecipes: build.query<Recipes, { skip: number; limit: number }>({
+      query: ({ skip, limit }) => `recipes?limit=${limit}&skip=${skip}`,
+      // query: () => `recipes`,
+    }),
     getRecipeById: build.query<Recipe, number | string | undefined>({
       query: (id) => `recipes/${id}`,
       keepUnusedDataFor: 600,
     }),
     searchRecipe: build.query<Recipes, string>({
       query: (input) => `recipes/search?q=${input}`,
+
       providesTags: ["recipes"],
     }),
   }),
 });
 
-export const { useGetRecipeByIdQuery, useSearchRecipeQuery } = recipesApi;
+export const {
+  useGetRecipeByIdQuery,
+  useSearchRecipeQuery,
+  useGetRecipesQuery,
+} = recipesApi;

@@ -1,6 +1,6 @@
 import { Outlet, useNavigate } from "react-router";
 import {
-  // useGetRecipesQuery,
+  useGetRecipesQuery,
   useSearchRecipeQuery,
 } from "../../redux/recipesApi";
 import RecipesList from "./RecipesList";
@@ -11,12 +11,21 @@ import Loading from "../../ui/Loading";
 
 export default function Recipes() {
   const navigate = useNavigate();
-
+  const limit = 3;
+  const page = 2;
+  const skip = (page - 1) * limit;
   const [inputSearch, setInputSearch] = useState("");
 
-  const { data: recipes, isLoading } = useSearchRecipeQuery(inputSearch);
+  const { data: limitRecipes, isLoading } = useGetRecipesQuery({ skip, limit });
 
-  if (isLoading) return <Loading />;
+  const { data: searchRecipes, isLoading: searchIsLoading } =
+    useSearchRecipeQuery(inputSearch);
+
+  const isSearch = inputSearch !== "";
+
+  const recipes = !isSearch ? limitRecipes : searchRecipes;
+
+  if (isLoading || searchIsLoading) return <Loading />;
 
   return (
     <div className="recipes">
@@ -43,7 +52,7 @@ export default function Recipes() {
           <Search inputSearch={inputSearch} setInputSearch={setInputSearch} />
         </div>
       </div>
-      <RecipesList recipes={recipes?.recipes ?? []} />
+      <RecipesList recipes={recipes?.recipes ?? []} isSearch={isSearch} />
     </div>
   );
 }

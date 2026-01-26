@@ -3,7 +3,7 @@ import Pagination from "../../ui/Pagination";
 import RecipeNotFound from "../../ui/RecipeNotFound";
 import RecipeItem from "./RecipeItem";
 
-export default function RecipeList({ recipes }: RecipeListProps) {
+export default function RecipeList({ recipes, isSearch }: RecipeListProps) {
   if (recipes?.length === 0) return <RecipeNotFound />;
 
   return (
@@ -22,7 +22,7 @@ export default function RecipeList({ recipes }: RecipeListProps) {
           />
         ))}
       </ul>
-      <Pagination />
+      {!isSearch && <Pagination />}
     </>
   );
 }

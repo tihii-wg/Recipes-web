@@ -157,11 +157,24 @@ h6 {
   color: slategray;
 }
 
+.pagination-container{
+display: flex;
+align-items: center;
+padding: 30px 10px;
+gap: 50px;
+}
+
+.pagination-container p{
+font-size: large;}
 .main {
   padding: 10px 10px 10px;
   height: 100%;
   margin: 0;
 }
+
+.pagination-buttons{
+  display: flex;
+gap: 10px;}
 
 .main-container {
   margin: 0 auto;
