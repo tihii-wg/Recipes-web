@@ -49,7 +49,7 @@ export default function RecipeCard() {
     <div className="recipe-card">
       <div className="recipe-card_buttons">
         <Button
-          handler={() => {
+          onClick={() => {
             navigate(-1);
           }}
         >
@@ -57,8 +57,8 @@ export default function RecipeCard() {
         </Button>
         {!isAdded && (
           <Button
-            isDisabled={isLoading}
-            handler={() => {
+            disabled={isLoading}
+            onClick={() => {
               handleAddMyRecipe();
             }}
           >
@@ -66,7 +66,7 @@ export default function RecipeCard() {
           </Button>
         )}
         <Button
-          handler={() => {
+          onClick={() => {
             navigate("/myrecipes");
           }}
         >

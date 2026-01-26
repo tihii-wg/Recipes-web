@@ -42,7 +42,7 @@ export default function RecipeItem({
           </div>
           <div className="recipe-item_buttons">
             <Button
-              handler={() => {
+              onClick={() => {
                 deleteBook(id.toString());
                 toast.success("Recipe was deleted.");
               }}
@@ -50,7 +50,7 @@ export default function RecipeItem({
               Delete recipe
             </Button>
             <Button
-              handler={() => {
+              onClick={() => {
                 navigate(`/recipecard/${id}`);
               }}
             >

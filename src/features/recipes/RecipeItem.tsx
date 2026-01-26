@@ -60,15 +60,15 @@ export default function RecipeItem({
           </div>
           <div className="recipe-item_buttons">
             <Button
-              isDisabled={isLoading}
-              handler={() => {
+              disabled={isLoading}
+              onClick={() => {
                 handleAddMyRecipe();
               }}
             >
               Add to my cart
             </Button>
             <Button
-              handler={() => {
+              onClick={() => {
                 navigate(`/recipecard/${id}`);
               }}
             >

@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div>
       <Button
-        handler={() => {
+        onClick={() => {
           navigate("/myrecipes");
         }}
       >

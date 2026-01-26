@@ -15,14 +15,14 @@ export default function MyBooks() {
       <div className="my-recipes_buttons_container">
         <div className="my-recipes_buttons">
           <Button
-            handler={() => {
+            onClick={() => {
               navigate("/recipes");
             }}
           >
             Recipes
           </Button>
           <Button
-            handler={() => {
+            onClick={() => {
               navigate("/");
             }}
           >

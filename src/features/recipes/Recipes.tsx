@@ -18,21 +18,20 @@ export default function Recipes() {
 
   if (isLoading) return <Loading />;
 
-
   return (
     <div className="recipes">
       <Outlet />
       <div className="recipes-buttons_container">
         <div className="recipes-buttons">
           <Button
-            handler={() => {
+            onClick={() => {
               navigate("/");
             }}
           >
             Back to home
           </Button>
           <Button
-            handler={() => {
+            onClick={() => {
               navigate("/myrecipes");
             }}
           >
