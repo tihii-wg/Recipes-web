@@ -7,7 +7,7 @@ import Loading from "../../ui/Loading";
 export default function MyBooks() {
   const { data: myRecipes, isLoading } = useGetMyRecipesQuery();
   const navigate = useNavigate();
-  console.log(myRecipes);
+
   if (isLoading) return <Loading />;
 
   return (
