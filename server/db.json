@@ -1302,6 +1302,42 @@
       "mealType": [
         "Dessert"
       ]
+    },
+    {
+      "id": "34",
+      "name": "Japanese Matcha Green Tea Ice Cream",
+      "ingredients": [
+        "Heavy cream",
+        "Whole milk",
+        "Granulated sugar",
+        "Matcha green tea powder",
+        "Egg yolks"
+      ],
+      "instructions": [
+        "In a saucepan, heat heavy cream, whole milk, and granulated sugar until it begins to steam.",
+        "Whisk in matcha green tea powder until fully combined.",
+        "In a separate bowl, whisk egg yolks. Slowly pour the hot milk mixture into the yolks, whisking continuously.",
+        "Return the mixture to the saucepan and heat until it thickens. Do not boil.",
+        "Strain the mixture and let it cool. Churn in an ice cream maker according to the manufacturer's instructions.",
+        "Freeze until firm. Indulge in the creamy goodness of Japanese Matcha Green Tea Ice Cream!"
+      ],
+      "prepTimeMinutes": 30,
+      "cookTimeMinutes": 15,
+      "servings": 4,
+      "difficulty": "Medium",
+      "cuisine": "Japanese",
+      "caloriesPerServing": 280,
+      "tags": [
+        "Matcha ice cream",
+        "Japanese"
+      ],
+      "userId": 174,
+      "image": "https://cdn.dummyjson.com/recipe-images/34.webp",
+      "rating": 4.2,
+      "reviewCount": 87,
+      "mealType": [
+        "Dessert"
+      ]
     }
   ]
 }

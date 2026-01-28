@@ -3,13 +3,17 @@ import Pagination from "../../ui/Pagination";
 import RecipeNotFound from "../../ui/RecipeNotFound";
 import RecipeItem from "./RecipeItem";
 
-export default function RecipeList({ recipes, isSearch }: RecipeListProps) {
-  if (recipes?.length === 0) return <RecipeNotFound />;
+export default function RecipeList({
+  recipes,
+  isSearch,
+  pagination,
+}: RecipeListProps) {
+  if (recipes?.recipes.length === 0) return <RecipeNotFound />;
 
   return (
     <>
       <ul>
-        {recipes?.map((r: Recipe) => (
+        {recipes?.recipes.map((r: Recipe) => (
           <RecipeItem
             recipe={r}
             key={r.id}
@@ -22,7 +26,7 @@ export default function RecipeList({ recipes, isSearch }: RecipeListProps) {
           />
         ))}
       </ul>
-      {!isSearch && <Pagination />}
+      {!isSearch && <Pagination recipes={recipes} pagination={pagination} />}
     </>
   );
 }

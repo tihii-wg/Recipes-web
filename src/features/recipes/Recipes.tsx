@@ -1,30 +1,24 @@
 import { Outlet, useNavigate } from "react-router";
-import {
-  useGetRecipesQuery,
-  useSearchRecipeQuery,
-} from "../../redux/recipesApi";
+import { useSearchRecipeQuery } from "../../redux/recipesApi";
 import RecipesList from "./RecipesList";
 import Button from "../../ui/Button";
 import Search from "../../ui/Search";
 import { useState } from "react";
 import Loading from "../../ui/Loading";
+import { useRecipes } from "../../hooks/useRecipes";
 
 export default function Recipes() {
-  const navigate = useNavigate();
-  const limit = 3;
-  const page = 2;
-  const skip = (page - 1) * limit;
   const [inputSearch, setInputSearch] = useState("");
+  const isSearch = inputSearch.trim() !== "";
 
-  const { data: limitRecipes, isLoading } = useGetRecipesQuery({ skip, limit });
+  const navigate = useNavigate();
+
+  const { limitRecipes, isLoading, pagination } = useRecipes();
 
   const { data: searchRecipes, isLoading: searchIsLoading } =
     useSearchRecipeQuery(inputSearch);
 
-  const isSearch = inputSearch !== "";
-
   const recipes = !isSearch ? limitRecipes : searchRecipes;
-
   if (isLoading || searchIsLoading) return <Loading />;
 
   return (
@@ -52,7 +46,11 @@ export default function Recipes() {
           <Search inputSearch={inputSearch} setInputSearch={setInputSearch} />
         </div>
       </div>
-      <RecipesList recipes={recipes?.recipes ?? []} isSearch={isSearch} />
+      <RecipesList
+        recipes={recipes}
+        isSearch={isSearch}
+        pagination={pagination}
+      />
     </div>
   );
 }

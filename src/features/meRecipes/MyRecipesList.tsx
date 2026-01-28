@@ -1,7 +1,10 @@
-import type { Recipe, RecipeListProps } from "../../types/types";
+import type {
+  MyRecipeListProps,
+  Recipe,
+} from "../../types/types";
 import MyRecipeItem from "./MyRecipesItem";
 
-export default function BookList({ recipes }: RecipeListProps) {
+export default function BookList({ recipes }: MyRecipeListProps) {
   return (
     <ul>
       {recipes?.map((r: Recipe) => (

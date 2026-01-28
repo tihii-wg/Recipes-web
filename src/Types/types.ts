@@ -1,7 +1,8 @@
 export type Recipes = {
   limit: number;
-  recipes: [];
+  recipes: Recipe[];
   skip: number;
+  total: number;
 };
 
 export type Recipe = {
@@ -22,10 +23,26 @@ export type Recipe = {
   tags: [];
   userId: number;
 };
+// export type MyRecipes = {
+//   recipes: Recipe[];
+// };
+
+export type Pagination = {
+  limit: number;
+  page: string | null;
+  skip: number;
+  setLimit: (value: string) => void;
+};
 
 export type RecipeListProps = {
+  recipes?: Recipes;
+  isSearch?: boolean;
+  pagination?: Pagination;
+};
+export type MyRecipeListProps = {
   recipes: Recipe[];
-  isSearch: boolean;
+  isSearch?: boolean;
+  pagination?: Pagination;
 };
 
 export type SearcProps = {
@@ -33,22 +50,17 @@ export type SearcProps = {
   setInputSearch: (value: string) => void;
 };
 
-// export type SearchInputParams = {
-//   pageNumber?: number;
-//   pageSize?: number;
-//   search?: string;
-//   sortBy?: "addedAt" | "likesCount";
-//   sortDirection?: "asc" | "desc";
-//   tafsId?: string[];
-//   recipeid?: "string";
-// };
-
 export type RecipeItemProps = {
-  recipe: Recipe;
+  recipe?: Recipe;
   id: number | string;
   image: string;
   prepTimeMinutes: number;
   caloriesPerServing: number;
   cuisine: string;
   name: string;
+};
+
+export type PaginationProps = {
+  recipes: Recipes;
+  pagination: Pagination;
 };

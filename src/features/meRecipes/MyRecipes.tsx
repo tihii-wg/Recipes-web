@@ -5,11 +5,11 @@ import { useGetMyRecipesQuery } from "../../redux/myRecipesApi";
 import Loading from "../../ui/Loading";
 
 export default function MyBooks() {
-  const { data: myBooks, isLoading } = useGetMyRecipesQuery();
+  const { data: myRecipes, isLoading } = useGetMyRecipesQuery();
   const navigate = useNavigate();
-
+  console.log(myRecipes);
   if (isLoading) return <Loading />;
-
+  console.log(myRecipes);
   return (
     <div className="my-recipes">
       <div className="my-recipes_buttons_container">
@@ -28,10 +28,17 @@ export default function MyBooks() {
           >
             Home page
           </Button>
+          <Button
+            onClick={() => {
+              navigate(-1);
+            }}
+          >
+            Back
+          </Button>
         </div>
         <h1>My recipes...</h1>
       </div>
-      <MyRecipesList recipes={myBooks ?? []} />
+      <MyRecipesList recipes={myRecipes ?? []} />
     </div>
   );
 }
