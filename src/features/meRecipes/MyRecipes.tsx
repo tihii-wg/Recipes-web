@@ -9,7 +9,7 @@ export default function MyBooks() {
   const navigate = useNavigate();
   console.log(myRecipes);
   if (isLoading) return <Loading />;
-  console.log(myRecipes);
+
   return (
     <div className="my-recipes">
       <div className="my-recipes_buttons_container">
