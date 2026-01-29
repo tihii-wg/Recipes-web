@@ -1304,39 +1304,197 @@
       ]
     },
     {
-      "id": "34",
-      "name": "Japanese Matcha Green Tea Ice Cream",
+      "id": "29",
+      "name": "Lebanese Falafel Wrap",
       "ingredients": [
-        "Heavy cream",
-        "Whole milk",
-        "Granulated sugar",
-        "Matcha green tea powder",
-        "Egg yolks"
+        "Falafel balls",
+        "Whole wheat or regular wraps",
+        "Tomatoes, diced",
+        "Cucumbers, sliced",
+        "Red onions, thinly sliced",
+        "Lettuce, shredded",
+        "Tahini sauce",
+        "Fresh parsley, chopped"
       ],
       "instructions": [
-        "In a saucepan, heat heavy cream, whole milk, and granulated sugar until it begins to steam.",
-        "Whisk in matcha green tea powder until fully combined.",
-        "In a separate bowl, whisk egg yolks. Slowly pour the hot milk mixture into the yolks, whisking continuously.",
-        "Return the mixture to the saucepan and heat until it thickens. Do not boil.",
-        "Strain the mixture and let it cool. Churn in an ice cream maker according to the manufacturer's instructions.",
-        "Freeze until firm. Indulge in the creamy goodness of Japanese Matcha Green Tea Ice Cream!"
+        "Warm falafel balls according to package instructions.",
+        "Place a generous serving of falafel in the center of each wrap.",
+        "Top with diced tomatoes, sliced cucumbers, red onions, shredded lettuce, and fresh parsley.",
+        "Drizzle with tahini sauce and wrap tightly.",
+        "Enjoy this Lebanese Falafel Wrap filled with fresh and flavorful ingredients!"
+      ],
+      "prepTimeMinutes": 15,
+      "cookTimeMinutes": 10,
+      "servings": 2,
+      "difficulty": "Easy",
+      "cuisine": "Lebanese",
+      "caloriesPerServing": 400,
+      "tags": [
+        "Falafel",
+        "Lebanese",
+        "Wrap"
+      ],
+      "userId": 110,
+      "image": "https://cdn.dummyjson.com/recipe-images/29.webp",
+      "rating": 4.7,
+      "reviewCount": 84,
+      "mealType": [
+        "Lunch"
+      ]
+    },
+    {
+      "id": "23",
+      "name": "Italian Tiramisu",
+      "ingredients": [
+        "Espresso, brewed and cooled",
+        "Ladyfinger cookies",
+        "Mascarpone cheese",
+        "Heavy cream",
+        "Sugar",
+        "Cocoa powder"
+      ],
+      "instructions": [
+        "In a bowl, whip heavy cream until stiff peaks form.",
+        "In another bowl, mix mascarpone cheese and sugar until smooth.",
+        "Gently fold the whipped cream into the mascarpone mixture.",
+        "Dip ladyfinger cookies into brewed espresso and layer them in a serving dish.",
+        "Spread a layer of the mascarpone mixture over the cookies.",
+        "Repeat layers and finish with a dusting of cocoa powder.",
+        "Chill in the refrigerator for a few hours before serving.",
+        "Indulge in the decadence of this classic Italian Tiramisu!"
       ],
       "prepTimeMinutes": 30,
-      "cookTimeMinutes": 15,
-      "servings": 4,
+      "cookTimeMinutes": 0,
+      "servings": 6,
       "difficulty": "Medium",
-      "cuisine": "Japanese",
-      "caloriesPerServing": 280,
+      "cuisine": "Italian",
+      "caloriesPerServing": 350,
       "tags": [
-        "Matcha ice cream",
-        "Japanese"
+        "Tiramisu",
+        "Italian"
       ],
-      "userId": 174,
-      "image": "https://cdn.dummyjson.com/recipe-images/34.webp",
-      "rating": 4.2,
-      "reviewCount": 87,
+      "userId": 130,
+      "image": "https://cdn.dummyjson.com/recipe-images/23.webp",
+      "rating": 4.6,
+      "reviewCount": 0,
       "mealType": [
         "Dessert"
+      ]
+    },
+    {
+      "id": "24",
+      "name": "Turkish Kebabs",
+      "ingredients": [
+        "Ground lamb or beef",
+        "Onions, grated",
+        "Garlic, minced",
+        "Parsley, finely chopped",
+        "Cumin",
+        "Coriander",
+        "Red pepper flakes",
+        "Salt and pepper to taste",
+        "Flatbread for serving",
+        "Tahini sauce"
+      ],
+      "instructions": [
+        "In a bowl, mix ground meat, grated onions, minced garlic, chopped parsley, and spices.",
+        "Form the mixture into kebab shapes and grill until fully cooked.",
+        "Serve the kebabs on flatbread with a drizzle of tahini sauce.",
+        "Enjoy these flavorful Turkish Kebabs with your favorite sides."
+      ],
+      "prepTimeMinutes": 25,
+      "cookTimeMinutes": 15,
+      "servings": 4,
+      "difficulty": "Easy",
+      "cuisine": "Turkish",
+      "caloriesPerServing": 280,
+      "tags": [
+        "Kebabs",
+        "Turkish",
+        "Grilling"
+      ],
+      "userId": 26,
+      "image": "https://cdn.dummyjson.com/recipe-images/24.webp",
+      "rating": 4.6,
+      "reviewCount": 78,
+      "mealType": [
+        "Dinner"
+      ]
+    },
+    {
+      "id": "22",
+      "name": "Mango Lassi",
+      "ingredients": [
+        "Ripe mango, peeled and diced",
+        "Yogurt",
+        "Milk",
+        "Honey",
+        "Cardamom powder",
+        "Ice cubes"
+      ],
+      "instructions": [
+        "In a blender, combine diced mango, yogurt, milk, honey, and cardamom powder.",
+        "Blend until smooth and creamy.",
+        "Add ice cubes and blend again until the lassi is chilled.",
+        "Pour into glasses and garnish with a sprinkle of cardamom.",
+        "Enjoy this refreshing Mango Lassi!"
+      ],
+      "prepTimeMinutes": 10,
+      "cookTimeMinutes": 0,
+      "servings": 2,
+      "difficulty": "Easy",
+      "cuisine": "Indian",
+      "caloriesPerServing": 180,
+      "tags": [
+        "Lassi",
+        "Mango",
+        "Indian",
+        "Pakistani",
+        "Asian"
+      ],
+      "userId": 76,
+      "image": "https://cdn.dummyjson.com/recipe-images/22.webp",
+      "rating": 4.7,
+      "reviewCount": 15,
+      "mealType": [
+        "Beverage"
+      ]
+    },
+    {
+      "id": "25",
+      "name": "Blueberry Banana Smoothie",
+      "ingredients": [
+        "Blueberries, fresh or frozen",
+        "Banana, peeled and sliced",
+        "Greek yogurt",
+        "Almond milk",
+        "Honey",
+        "Chia seeds (optional)"
+      ],
+      "instructions": [
+        "In a blender, combine blueberries, banana, Greek yogurt, almond milk, and honey.",
+        "Blend until smooth and creamy.",
+        "Add chia seeds for extra nutrition and blend briefly.",
+        "Pour into a glass and enjoy this nutritious Blueberry Banana Smoothie!"
+      ],
+      "prepTimeMinutes": 10,
+      "cookTimeMinutes": 0,
+      "servings": 1,
+      "difficulty": "Easy",
+      "cuisine": "Smoothie",
+      "caloriesPerServing": 220,
+      "tags": [
+        "Smoothie",
+        "Blueberry",
+        "Banana"
+      ],
+      "userId": 16,
+      "image": "https://cdn.dummyjson.com/recipe-images/25.webp",
+      "rating": 4.8,
+      "reviewCount": 30,
+      "mealType": [
+        "Breakfast",
+        "Beverage"
       ]
     }
   ]

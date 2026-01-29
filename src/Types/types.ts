@@ -29,9 +29,9 @@ export type Recipe = {
 
 export type Pagination = {
   limit: number;
-  page: string | null;
+  page: number | null;
   skip: number;
-  setLimit: (value: string) => void;
+  setLimit: React.Dispatch<React.SetStateAction<number>>;
 };
 
 export type RecipeListProps = {
@@ -61,6 +61,6 @@ export type RecipeItemProps = {
 };
 
 export type PaginationProps = {
-  recipes: Recipes;
-  pagination: Pagination;
+  recipes?: Recipes;
+  pagination?: Pagination;
 };

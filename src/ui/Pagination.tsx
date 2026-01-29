@@ -1,30 +1,30 @@
 import { useSearchParams } from "react-router";
 import Button from "./Button";
+import type { PaginationProps } from "../types/types";
 
-export default function Pagination({ recipes, pagination }) {
+export default function Pagination({ recipes, pagination }: PaginationProps) {
   const [searchParams, setSearchParams] = useSearchParams();
-  const { limit, setLimit } = pagination;
+  const { limit, setLimit } = pagination!;
 
-  const totalRecipes = recipes.total;
+  const totalRecipes = recipes?.total;
 
   const currentPage = !searchParams.get("page")
     ? 1
     : Number(searchParams.get("page"));
 
+  if (!totalRecipes) return null;
   const pageCount = Math.ceil(totalRecipes / limit);
 
   function nextPage() {
     const next = currentPage === pageCount ? currentPage : currentPage + 1;
-    searchParams.set("page", next.toString());
+    searchParams.set("page", String(next));
     setSearchParams(searchParams);
   }
   function prevPage() {
     const prev = currentPage === 1 ? currentPage : currentPage - 1;
-    searchParams.set("page", prev.toString());
+    searchParams.set("page", String(prev));
     setSearchParams(searchParams);
   }
-
- 
 
   return (
     <div className="pagination-container">
@@ -33,8 +33,8 @@ export default function Pagination({ recipes, pagination }) {
         <select
           value={limit}
           onChange={(e) => {
-            setLimit(e.target.value);
-            searchParams.set("page", 1);
+            setLimit(Number(e.target.value));
+            searchParams.set("page", String(1));
             setSearchParams(searchParams);
           }}
         >

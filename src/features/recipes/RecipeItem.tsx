@@ -42,7 +42,12 @@ export default function RecipeItem({
           alt="/public/images/recipe-image.png"
         />
         <div className="recipe-item-description_container">
-          <div className="recipe-item-description">
+          <div
+            className="recipe-item-description"
+            onClick={() => {
+              navigate(`/recipecard/${id}`);
+            }}
+          >
             <div>
               <div className="recipe-item_title">
                 <span>{name}</span>
