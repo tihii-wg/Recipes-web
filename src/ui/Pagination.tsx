@@ -38,9 +38,11 @@ export default function Pagination({ recipes, pagination }: PaginationProps) {
             setSearchParams(searchParams);
           }}
         >
-          <option>5</option>
-          <option>10</option>
-          <option>15</option>
+          {[5, 10, 15].map((size) => (
+            <option value={size} key={size}>
+              {size}{" "}
+            </option>
+          ))}
         </select>
         from <span>{(currentPage - 1) * limit + 1} </span>
         to {currentPage === pageCount
